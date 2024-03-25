@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', 'Merriweather', sans-serif;
+    background-color: #0E183E;
+    max-width: 1600px;
+}
+
+main{
+    min-height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.card-1{
+    width: 550px;
+}
+
+.card-2{
+    width: 400px;
+    transform: translateY(200px);
+}
+.card-1,
+.card-2{
+    background-color: #FFFFFF;
+    border: 1px solid #0E183E;
+    padding: 3em;
+    color: #0E183E;
+    border-radius: 20px;
+}
+
+h2{
+    font-family: 'Merriweather';
+    margin: 1em 0;
+}
+.card-1,
+.card-2 span{
+    font-family: 'Poppins';
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*input range*/
+.range{
+    -webkit-appearance: none;
+    background: #ccc;
+    border-radius: 20px;
+    width: 90%;
+    height: 20px;
+    overflow: hidden;
+}
+
+.math{
+    color: black;
+    margin: 1em 0;
+}
+.math .range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #FC9861;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: -410px 0 0 400px #FC9861;
+    cursor: pointer;
+}
+
+.chemistry{
+    color: black;
+    margin: 1em 0;
+}
+.chemistry .range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #618CFC;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: -410px 0 0 400px #618CFC;
+    cursor: pointer;
+}
+
+.science{
+    color: black;
+    margin: 1em 0;
+}
+.science .range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #FC6186;
+    border-radius: 50%;
+    box-shadow: -410px 0 0 400px #FC6186;
+    cursor: pointer;
+}
+
+button{
+    font-family: 'Poppins';
+    margin: 1em 0;
+    padding: .7em 1.5em;
+    color: #FFFFFF;
+    background-color: #0E183E;
+    border: none;
+    border-radius: 20px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #213480;
+    transform: translateY(-2px);
+    transition: 0.3s all;
+}
+
+.card-2 .tittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tittle select{
+    font-family: 'Poppins';
+    border: none;
+    color: #0E183E;
+    font-weight: 500;
+}
+.tittle select:focus{
+    outline: none;
+}
+.card-2 .info{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+.info h3{
+    color: black;
+}
+.card-2 button{
+    font-size: 30px;
+    margin: 0;
+    padding: 0 1em;
+}
+
+footer{
+    bottom: 0;
+    background-color: #081238;
+    padding: 1em;
+    text-align: center;
+    color: #ffffff5e;
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card-1{
+        text-align: center;
+    }
+    .card-1 .stats{
+        text-align: start;
+    }
+    .card-2{
+        transform: translateY(0);
+    }
+}
